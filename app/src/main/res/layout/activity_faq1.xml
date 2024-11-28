@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--다른 faq 스크롤뷰 추가하기-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/main"
+        android:background="@drawable/cateback"
+        tools:context=".faq1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="자주 묻는 질문과 답변"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:background="@drawable/faq"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/myTextView"
+            android:layout_width="367dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/faqlist"
+            android:padding="16dp"
+            android:text="안녕하세요. 부동산 도우미 부끄입니다!\n자주 묻는 질문과 답변에 대해서 알려드리겠습니다\n\n지금까지 제가 받았던 질문들 중 , 많이 받은 질문을 추려 봤습니다.\n\n 1. 청년 제도 기준\n 2.내가 받을 수 있는 제도\n\n원하시는 번호를 입력해주시면 답변을 공유해드릴게요"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/faq"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_margin="20dp"
+            android:visibility="gone"
+            android:paddingTop="16dp"/>
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:autoLink="web"
+            android:background="@drawable/faq"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:background="#455680"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="채팅창으로 돌아가기"
+                android:textSize="16sp"
+                android:background="@drawable/background2"
+                android:textColor="#000000"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/messageInput1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="원하는 숫자를 입력하세요."
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColorHint="@color/black"
+                android:textColor="#000000"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="입력"
+                android:id="@+id/send1"
+                android:background="#cccccc"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
